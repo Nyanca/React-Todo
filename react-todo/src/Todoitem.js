@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Todoitem(){
+function Todoitem(props){
     return(
         <p>
           <label>
-            <input type="checkbox"/>
-            <span>Yellow</span>
+            <input type="checkbox" checked={props.item.completed} />
+            <span>{props.item.text}</span>
           </label>
         </p>   
     )
 }
 
-export default Todoitem
+export default Todoitem;
